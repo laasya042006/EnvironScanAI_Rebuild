@@ -1,0 +1,49 @@
+ENVIRONSCAN AI — DATA QUALITY REPORT
+==========================================
+Input file: unlabeled_pollution_data.csv
+Original rows: 200900
+Original columns: 21
+Rows after duplicate removal: 200900
+Exact duplicates removed: 0
+Unique cities: 10
+Date range: 2014-01-01 00:00:00 to 2024-12-31 00:00:00
+
+MISSING VALUES BY COLUMN
+----------------------------
+fire_min_dist_km: 163995
+city: 0
+latitude: 0
+longitude: 0
+date: 0
+location_id: 0
+PM2.5: 0
+PM10: 0
+SO2: 0
+NO2: 0
+O3: 0
+temp: 0
+humidity: 0
+CO: 0
+wind_speed: 0
+wind_dir: 0
+dist_to_industry: 0
+dist_to_road: 0
+dist_to_farm: 0
+fire_nearby: 0
+traffic_index: 0
+fire_distance_missing: 0
+
+VALIDATION COUNTS
+------------------
+invalid_latitude: 0
+invalid_longitude: 0
+humidity_outside_0_100: 0
+fire_nearby_not_0_or_1: 0
+unparsed_dates: 0
+
+NOTE:
+The dataset has no verified pollution-source target column.
+Do not claim a model predicts real pollution sources until labels
+are independently defined and validated.
+
+Cleaned file: data\processed\cleaned_pollution_data.csv
